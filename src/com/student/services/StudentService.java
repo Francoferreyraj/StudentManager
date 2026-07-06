@@ -30,26 +30,35 @@ public class StudentService {
 		System.out.println("Estudiante agregado: " + student.toString());
 	}
 	
+	// Ruben
 	public boolean updateStudent(String id, Student student) {
 		
 		return false;
 	}
-	
+	// Franco
 	public boolean deleteStudent(String id) {
-		
-		return false;
+		if (id == null || id.isEmpty()) {
+			return false;
+		}
+		    
+		Student removed = students.remove(id);
+		return removed != null;
+		}
 	}
 	
+	// Matias
 	public int getStudentCount() {
 		
 		return 0;
 	}
-		
+	
+	// Bianchina
 	public boolean updateStudentGrade(String id, double grade) {
 		
 		return false;
 	}
 	
+	// Ariel
 	public double getAverageGrade() {
 		return 0.0;
 	}
